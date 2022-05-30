@@ -1,0 +1,35 @@
+{
+  "name": "ejs-for-tyranoscript-syntax",
+  "displayName": "EJS for TyranoScript Syntax",
+  "description": "Extension of ejs so that it can also be used with typescript",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.67.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [
+      {
+        "id": "ts-ejs",
+        "aliases": [
+          "ejs for typescript",
+          "ts-ejs"
+        ],
+        "extensions": [
+          ".ts.ejs",
+          ".tsejs"
+        ],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "ts-ejs",
+        "scopeName": "source.ts-ejs",
+        "path": "./syntaxes/ts-ejs.tmLanguage.json"
+      }
+    ]
+  }
+}
