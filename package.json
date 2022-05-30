@@ -12,13 +12,13 @@
   "contributes": {
     "languages": [
       {
-        "id": "ts-ejs",
+        "id": "ejsx",
         "aliases": [
           "ejs for typescript",
           "ts-ejs"
         ],
         "extensions": [
-          ".ts.ejs",
+          ".ejsx",
           ".tsejs"
         ],
         "configuration": "./language-configuration.json"
@@ -26,9 +26,12 @@
     ],
     "grammars": [
       {
-        "language": "ts-ejs",
-        "scopeName": "source.ts-ejs",
-        "path": "./syntaxes/ts-ejs.tmLanguage.json"
+        "language": "ejsx",
+        "scopeName": "text.html.ejs.ejsx",
+        "path": "./syntaxes/ts-ejs.tmLanguage.json",
+        "injectTo": [
+          "source.ts"
+        ]
       }
     ]
   }
